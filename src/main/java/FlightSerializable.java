@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
+import java.io.Serializable;
 
-public class FlightSerializable {
+public class FlightSerializable implements Serializable {
+
 }
