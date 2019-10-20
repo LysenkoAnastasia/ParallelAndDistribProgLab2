@@ -9,6 +9,7 @@ public class FlightsApp {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> airportsFile = sc.textFile("L_AIRPORT_ID");
-        JavaRDD<String> flightsFile = sc.textFile("");
+        JavaRDD<String> flightsFile = sc.textFile("664600583_T_ONTIME_sample");
+        
     }
 }
