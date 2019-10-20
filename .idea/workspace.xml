@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48411932-6719-44fe-8a2a-63262d033510" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightParcer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FlightsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightsApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +29,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1STY5rFCKSf5l12MyvOdXMaQjty" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -52,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571588872149</updated>
-      <workItem from="1571588912757" duration="2479000" />
+      <workItem from="1571588912757" duration="3899000" />
     </task>
     <servers />
   </component>
