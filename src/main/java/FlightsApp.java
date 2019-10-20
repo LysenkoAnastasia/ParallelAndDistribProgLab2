@@ -8,6 +8,7 @@ public class FlightsApp {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
-        JavaRDD<String> lines = sc.textFile("/path/to/README.md");
+        JavaRDD<String> airportsFile = sc.textFile("");
+        JavaRDD<String> flightsFile = sc.textFile("");
     }
 }
