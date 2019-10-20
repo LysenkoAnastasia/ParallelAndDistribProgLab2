@@ -25,7 +25,9 @@ public class FlightParser {
         return Integer.getInteger(strings[18]);
     }
 
-    public in
-
+    public float getCancelled(String str) {
+        String[] strings = str.split(",");
+        return Integer.getInteger(strings[19]);
+    }
 
 }
