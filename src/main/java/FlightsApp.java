@@ -2,7 +2,10 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.broadcast.Broadcast;
 import scala.Tuple2;
+
+import java.util.Map;
 
 public class FlightsApp {
     public static void main(String[] args) {
@@ -10,8 +13,8 @@ public class FlightsApp {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        JavaPairRDD<Integer, String> airportPair = sc.textFile("L_AIRPORT_ID").mapToPair(s -> new Tuple2<>(flP.getAirportId(s), flP.getAiroportName(s))
-        ).collectAsMap() ;
+        final Broadcast<Map<Long, String>> airportsBroadcasted = sc.textFile("L_AIRPORT_ID").mapToPair(s -> new Tuple2<>(flP.getAirportId(s), flP.getAiroportName(s))
+        ).collectAsMap();
 
         JavaRDD<String> flightsFile = sc.textFile("664600583_T_ONTIME_sample.csv");
 

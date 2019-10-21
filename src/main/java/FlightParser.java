@@ -1,8 +1,8 @@
 public class FlightParser {
 
-    public int getAirportId(String str) {
+    public long getAirportId(String str) {
         String[] strings = str.split(",[\"]");
-        return Integer.getInteger(strings[0]);
+        return Long.getLong(strings[0]);
     }
 
     public String getAiroportName(String str) {
@@ -10,24 +10,24 @@ public class FlightParser {
         return strings[1];
     }
 
-    public int getOrigionAirportID(String str) {
+    public long getOrigionAirportID(String str) {
         String[] strings = str.split(",");
-        return Integer.getInteger(strings[11]);
+        return Long.getLong(strings[11]);
     }
 
-    public int getDestAirportID(String str) {
+    public long getDestAirportID(String str) {
         String[] strings = str.split(",");
-        return Integer.getInteger(strings[14]);
+        return Long.getLong(strings[14]);
     }
 
-    public float getDelayTime(String str) {
+    public long getDelayTime(String str) {
         String[] strings = str.split(",");
-        return Integer.getInteger(strings[18]);
+        return Double.parseDouble(strings[18]);
     }
 
-    public float getCancelled(String str) {
+    public long getCancelled(String str) {
         String[] strings = str.split(",");
-        return Integer.getInteger(strings[19]);
+        return Double.parseDouble(strings[19]);
     }
 
 }
