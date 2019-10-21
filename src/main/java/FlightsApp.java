@@ -18,6 +18,7 @@ public class FlightsApp {
         JavaPairRDD<Tuple2<Integer, Integer>, Tuple2<Float, Float>> flightPair = flightsFile.mapToPair(s -> new Tuple2<>(new Tuple2<>(flP.getOrigionAirportID(s), flP.getDestAirportID(s)),
                 new Tuple2<>(flP.getDelayTime(s), flP.getCancelled(s)))
         );
+
     }
 
 }
