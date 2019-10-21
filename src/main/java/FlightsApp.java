@@ -12,7 +12,7 @@ public class FlightsApp {
 
         JavaPairRDD<Integer, String> airportPair = sc.textFile("L_AIRPORT_ID").mapToPair(s -> new Tuple2<>(flP.getAirportId(s), flP.getAiroportName(s))
         );
-        
+
         JavaRDD<String> flightsFile = sc.textFile("664600583_T_ONTIME_sample.csv");
 
 
