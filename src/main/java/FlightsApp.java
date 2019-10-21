@@ -19,6 +19,7 @@ public class FlightsApp {
                 new Tuple2<>(flP.getDelayTime(s), flP.getCancelled(s)))
         );
 
+        
     }
 
 }
