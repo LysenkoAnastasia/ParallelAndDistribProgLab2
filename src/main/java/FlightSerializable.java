@@ -29,4 +29,14 @@ public class FlightSerializable implements Serializable {
         return cancelled;
     }
 
+    @Override
+    public String toString() {
+        return "FlightSerializable{" +
+                "origionAirportID = '" + origionAirportID + '\'' +
+                ", destAirportID = " + destAirportID +
+                ", delayTime = '" + delayTime + '\'' +
+                ", cancelled = " + cancelled +
+                '}';
+    }
+
 }
