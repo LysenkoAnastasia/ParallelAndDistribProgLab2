@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48411932-6719-44fe-8a2a-63262d033510" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlightSerializable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightSerializable.java" afterDir="false" />
-    </list>
+    <list default="true" id="48411932-6719-44fe-8a2a-63262d033510" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571588872149</updated>
       <workItem from="1571588912757" duration="8394000" />
-      <workItem from="1571655994640" duration="970000" />
+      <workItem from="1571655994640" duration="1219000" />
     </task>
     <servers />
   </component>
