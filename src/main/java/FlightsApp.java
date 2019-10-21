@@ -11,7 +11,7 @@ public class FlightsApp {
         JavaSparkContext sc = new JavaSparkContext(conf);
 
         JavaPairRDD<Integer, String> airportPair = sc.textFile("L_AIRPORT_ID").mapToPair(s -> new Tuple2<>(flP.getAirportId(s), flP.getAiroportName(s))
-        ) ;
+        ).c ;
 
         JavaRDD<String> flightsFile = sc.textFile("664600583_T_ONTIME_sample.csv");
 
