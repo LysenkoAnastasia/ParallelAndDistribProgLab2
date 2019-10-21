@@ -38,5 +38,4 @@ public class FlightSerializable implements Serializable {
                 ", cancelled = " + cancelled +
                 '}';
     }
-
 }
