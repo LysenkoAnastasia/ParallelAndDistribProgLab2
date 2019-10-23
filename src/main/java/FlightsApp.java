@@ -7,7 +7,6 @@ import scala.Float;
 import scala.Long;
 import scala.Tuple2;
 
-import java.util.Map;
 
 public class FlightsApp {
     public static void main(String[] args) {
