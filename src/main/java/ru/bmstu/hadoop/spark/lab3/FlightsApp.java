@@ -29,6 +29,7 @@ public class FlightsApp {
                 new FlightSerializable(flP.getOrigionAirportID(s), flP.getDestAirportID(s), flP.getDelayTime(s), flP.getCancelled(s)))
         );
 
+        
 
     }
 
