@@ -16,8 +16,9 @@ public class FlightsApp {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        final Broadcast<Map<Long, String>> airportsBroadcasted = sc.broadcast(sc.textFile("L_AIRPORT_ID").mapToPair(s -> new Tuple2<>(flP.getAirportId(s), flP.getAiroportName(s))
-        ).collectAsMap());
+        final Broadcast<Map<Long, String>> airportsBroadcasted = sc.broadcast(sc.textFile("L_AIRPORT_ID").
+                mapToPair(s -> new Tuple2<>(flP.getAirportId(s), flP.getAiroportName(s)))
+                .collectAsMap());
 
         JavaRDD<String> flightsFile = sc.textFile("664600583_T_ONTIME_sample.csv");
 
