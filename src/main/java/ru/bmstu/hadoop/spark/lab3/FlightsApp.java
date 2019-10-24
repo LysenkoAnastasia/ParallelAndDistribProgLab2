@@ -31,7 +31,9 @@ public class FlightsApp {
 
         JavaRDD<Tuple2<Integer, Integer>, Iterable<FlightSerializable>> flightGroupPair = flightPair.groupByKey();
 
-        JavaRDD<Tuple2<Integer, Integer>, String> res = flightGroupPair.reduce()
+        JavaRDD<Tuple2<Integer, Integer>, String> res = flightGroupPair.reduce(
+                {return ;}
+        )
     }
 
 }

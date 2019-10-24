@@ -20,12 +20,12 @@ public class FlightSerializable implements Serializable {
 
 
 
-    public long getDestAirportID () {
-        return destAirportID;
-    }
-
     public long getOrigionAirportID() {
         return origionAirportID;
+    }
+
+    public long getDestAirportID () {
+        return destAirportID;
     }
 
     public long getDelayTime() {
