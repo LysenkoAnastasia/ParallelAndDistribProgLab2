@@ -25,10 +25,10 @@ public class FlightsApp {
         JavaRDD<String> flightsFile = sc.textFile("664600583_T_ONTIME_sample.csv");
 
 
-        JavaPairRDD<Tuple2<Integer, Integer>, FlightSerializable<Integer, Integer, Float, Float>> flightPair = flightsFile.mapToPair(s -> new Tuple2<>(new Tuple2<>(flP.getOrigionAirportID(s), flP.getDestAirportID(s)),
-                new Tuple2<>(flP.getDelayTime(s), flP.getCancelled(s)))
+        JavaPairRDD<Tuple2<Integer, Integer>, FlightSerializable<Long, Long, Long, Long>> flightPair = flightsFile
+                .mapToPair(s -> new Tuple2<>(new Tuple2(flP.getOrigionAirportID(s), flP.getDestAirportID(s)),
+                new FlightSerializable(flP.getOrigionAirportID(s), flP.getDestAirportID(s), flP.getDelayTime(s), flP.getCancelled(s)))
         );
-        final Broadcast<Map<>>
 
     }
 
