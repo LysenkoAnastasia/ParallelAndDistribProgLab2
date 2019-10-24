@@ -7,7 +7,6 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.broadcast.Broadcast;
 import ru.bmstu.hadoop.spark.lab3.FlightParser;
 import scala.Float;
-import scala.Long;
 import scala.Tuple2;
 
 import java.util.Map;
@@ -20,7 +19,7 @@ public class FlightsApp {
         JavaSparkContext sc = new JavaSparkContext(conf);
 
         JavaRDD<String> airFile = sc.textFile("L_AIRPORT_ID");
-        
+        JavaPairRDD<Long,String> = sc.addFile();
 
         final Broadcast<Map<Long, String>> airportsBroadcasted = sc.broadcast(airFile
                 .mapToPair(s -> new Tuple2<>(flP.getAirportId(s), flP.getAiroportName(s)))
