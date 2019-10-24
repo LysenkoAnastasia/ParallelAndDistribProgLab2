@@ -1,3 +1,5 @@
+package ru.bmstu.hadoop.spark.lab3;
+
 public class FlightParser {
 
     public long getAirportId(String str) {

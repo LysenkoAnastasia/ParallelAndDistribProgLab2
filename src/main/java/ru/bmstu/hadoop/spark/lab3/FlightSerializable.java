@@ -1,3 +1,5 @@
+package ru.bmstu.hadoop.spark.lab3;
+
 import scala.Serializable;
 
 public class FlightSerializable implements Serializable {
