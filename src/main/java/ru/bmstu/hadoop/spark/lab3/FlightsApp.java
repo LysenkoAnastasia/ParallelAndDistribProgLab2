@@ -29,7 +29,7 @@ public class FlightsApp {
                 new FlightSerializable(flP.getOrigionAirportID(s), flP.getDestAirportID(s), flP.getDelayTime(s), flP.getCancelled(s)))
         );
 
-        
+        JavaRDD<Tuple2<Integer, Integer>, Tuple2<
 
     }
 
