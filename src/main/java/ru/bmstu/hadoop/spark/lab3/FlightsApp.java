@@ -18,10 +18,7 @@ public class FlightsApp {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        JavaRDD<String> airFile = sc.textFile("L_AIRPORT_ID");
-        JavaPairRDD<Long,String> airPair = sc.;
-
-        final Broadcast<Map<Long, String>> airportsBroadcasted = sc.broadcast(airFile
+        final Broadcast<Map<Long, String>> airportsBroadcasted = sc.broadcast(sc.textFile("L_AIRPORT_ID")
                 .mapToPair(s -> new Tuple2<>(flP.getAirportId(s), flP.getAiroportName(s)))
                 .collectAsMap());
 
@@ -31,6 +28,7 @@ public class FlightsApp {
         JavaPairRDD<Tuple2<Integer, Integer>, Tuple2<Float, Float>> flightPair = flightsFile.mapToPair(s -> new Tuple2<>(new Tuple2<>(flP.getOrigionAirportID(s), flP.getDestAirportID(s)),
                 new Tuple2<>(flP.getDelayTime(s), flP.getCancelled(s)))
         );
+        final Broadcast<Map<>>
 
     }
 
