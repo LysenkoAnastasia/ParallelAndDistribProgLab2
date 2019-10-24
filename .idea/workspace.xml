@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48411932-6719-44fe-8a2a-63262d033510" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlightSerializable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightSerializable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FlightsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightsApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/DevelopmentOfParallelAndDistributedPrograms/lab2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/lab3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,7 +64,7 @@
       <workItem from="1571655994640" duration="3828000" />
       <workItem from="1571751008610" duration="69000" />
       <workItem from="1571864154490" duration="1577000" />
-      <workItem from="1571896775290" duration="313000" />
+      <workItem from="1571896775290" duration="918000" />
     </task>
     <servers />
   </component>
@@ -72,21 +72,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="834" y="379" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1571896963993">
+    <state x="834" y="379" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1571902541616">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
-    <state x="834" y="379" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1853.923@67.27.1853.923" timestamp="1571896963993" />
-    <state x="776" y="245" width="424" height="484" key="FileChooserDialogImpl" timestamp="1571657647917">
+    <state x="834" y="379" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1853.923@67.27.1853.923" timestamp="1571902541616" />
+    <state x="571" y="145" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1571898676086">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
-    <state x="776" y="245" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.923@67.27.1853.923" timestamp="1571657647917" />
+    <state x="571" y="145" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/67.27.1853.923@67.27.1853.923" timestamp="1571898676086" />
+    <state x="776" y="245" width="424" height="484" key="FileChooserDialogImpl" timestamp="1571902603461">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="776" y="245" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.923@67.27.1853.923" timestamp="1571902603461" />
     <state x="482" y="122" key="SettingsEditor" timestamp="1571598719261">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
     <state x="482" y="122" key="SettingsEditor/67.27.1853.923@67.27.1853.923" timestamp="1571598719261" />
-    <state x="649" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1571896773758">
+    <state x="649" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1571902469137">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
-    <state x="649" y="315" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1571896773758" />
+    <state x="649" y="315" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1571902469137" />
+    <state x="302" y="89" width="1372" height="796" key="new project wizard" timestamp="1571898702058">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="302" y="89" width="1372" height="796" key="new project wizard/67.27.1853.923@67.27.1853.923" timestamp="1571898702058" />
   </component>
 </project>
