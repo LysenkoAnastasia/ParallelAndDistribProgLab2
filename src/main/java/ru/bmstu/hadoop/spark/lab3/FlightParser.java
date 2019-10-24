@@ -24,12 +24,12 @@ public class FlightParser {
 
     public long getDelayTime(String str) {
         String[] strings = str.split(",");
-        return Double.parseDouble(strings[18]);
+        return Long.parseLong(strings[18]);
     }
 
     public long getCancelled(String str) {
         String[] strings = str.split(",");
-        return Double.parseDouble(strings[19]);
+        return Long.parseLong(strings[19]);
     }
 
 }
