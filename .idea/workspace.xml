@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="48411932-6719-44fe-8a2a-63262d033510" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightSerializable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightSerializable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightsApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +64,7 @@
       <workItem from="1571655994640" duration="3828000" />
       <workItem from="1571751008610" duration="69000" />
       <workItem from="1571864154490" duration="1577000" />
+      <workItem from="1571896775290" duration="313000" />
     </task>
     <servers />
   </component>
