@@ -28,7 +28,7 @@ public class FlightsApp {
                 .mapToPair(s -> new Tuple2<>(new Tuple2(flP.getOrigionAirportID(s), flP.getDestAirportID(s)),
                 new FlightSerializable(flP.getOrigionAirportID(s), flP.getDestAirportID(s), flP.getDelayTime(s), flP.getCancelled(s)))
         );
-        
+
 
     }
 
