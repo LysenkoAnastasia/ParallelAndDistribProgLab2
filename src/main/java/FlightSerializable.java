@@ -1,4 +1,4 @@
-import java.io.Serializable;
+import scala.Serializable;
 
 public class FlightSerializable implements Serializable {
     private int origionAirportID;
