@@ -38,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/lab3" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/lab3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -89,10 +89,10 @@
       <screen x="67" y="27" width="1853" height="923" />
     </state>
     <state x="482" y="122" key="SettingsEditor/67.27.1853.923@67.27.1853.923" timestamp="1571598719261" />
-    <state x="649" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1571902469137">
+    <state x="649" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1571952716704">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
-    <state x="649" y="315" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1571902469137" />
+    <state x="649" y="315" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1571952716704" />
     <state x="302" y="89" width="1372" height="796" key="new project wizard" timestamp="1571898702058">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
