@@ -19,7 +19,7 @@ public class FlightsApp {
         JavaSparkContext sc = new JavaSparkContext(conf);
 
         JavaRDD<String> airFile = sc.textFile("L_AIRPORT_ID");
-        JavaPairRDD<Long,String> = sc.;
+        JavaPairRDD<Long,String> airPair = sc.;
 
         final Broadcast<Map<Long, String>> airportsBroadcasted = sc.broadcast(airFile
                 .mapToPair(s -> new Tuple2<>(flP.getAirportId(s), flP.getAiroportName(s)))
