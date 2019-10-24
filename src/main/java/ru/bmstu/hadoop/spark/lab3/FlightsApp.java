@@ -29,8 +29,9 @@ public class FlightsApp {
                 new FlightSerializable(flP.getOrigionAirportID(s), flP.getDestAirportID(s), flP.getDelayTime(s), flP.getCancelled(s)))
         );
 
-        JavaRDD<Tuple2<Integer, Integer>, Iterable<FlightSerializable>> = flightPair.groupByKey();
+        JavaRDD<Tuple2<Integer, Integer>, Iterable<FlightSerializable>> flightGroupPair = flightPair.groupByKey();
 
+        JavaRDD<Tuple2<Integer, Integer>, String> res = flightGroupPair.reduce()
     }
 
 }
