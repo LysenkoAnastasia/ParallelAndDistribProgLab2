@@ -7,11 +7,11 @@ public class FlightParser {
         this.strings = line.split(delimiter);
     }
 
-    FlightParser getFlightParser(String line) {
+    static FlightParser getFlightParser(String line) {
         return new FlightParser(line, ",");
     }
 
-    FlightParser getAirportParser(String line) {
+    static FlightParser getAirportParser(String line) {
         return new FlightParser(line, ",[\"]");
     }
 

@@ -19,8 +19,9 @@ public class FlightsApp {
 
         final Broadcast<Map<Long, String>> airportsBroadcasted = sc.broadcast(
                 sc.textFile("L_AIRPORT_ID")
-                .mapToPair(s -> new Tuple2<>(flP.getAirportId(s), flP.getAiroportName(s)))
-                .collectAsMap()
+                        .map(l -> FlightParser.getAirportParser(l))
+                        .mapToPair(p -> new Tuple2<>(p.getAirportId(), p.getAiroportName()))
+                        .collectAsMap()
         );
 
 
