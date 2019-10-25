@@ -3,29 +3,15 @@ package ru.bmstu.hadoop.spark.lab3;
 import scala.Serializable;
 
 public class FlightSerializable implements Serializable {
-    private long origionAirportID;
-    private long destAirportID;
     private long delayTime;
     private long cancelled;
 
     public FlightSerializable() {
     }
 
-    public FlightSerializable(long origionAirportID, long destAirportID, long delayTime, long cancelled) {
-        this.origionAirportID = origionAirportID;
-        this.destAirportID = destAirportID;
+    public FlightSerializable(long delayTime, long cancelled) {
         this.delayTime = delayTime;
         this.cancelled = cancelled;
-    }
-
-
-
-    public long getOrigionAirportID() {
-        return origionAirportID;
-    }
-
-    public long getDestAirportID () {
-        return destAirportID;
     }
 
     public long getDelayTime() {
@@ -39,8 +25,6 @@ public class FlightSerializable implements Serializable {
     @Override
     public String toString() {
         return "FlightSerializable{" +
-                "origionAirportID = '" + origionAirportID + '\'' +
-                ", destAirportID = " + destAirportID +
                 ", delayTime = '" + delayTime + '\'' +
                 ", cancelled = " + cancelled +
                 '}';
