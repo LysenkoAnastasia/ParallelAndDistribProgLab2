@@ -24,7 +24,7 @@ public class FlightsApp {
                         .mapToPair(p -> new Tuple2<>(p.getAirportId(), p.getAiroportName()))
                         .collectAsMap()
         );
-        
+
         sc.textFile("664600583_T_ONTIME_sample.csv")
                 .zipWithIndex()
                 .filter(elem -> elem._2() != 0)
@@ -40,7 +40,7 @@ public class FlightsApp {
                         elem -> {
                             Iterator<FlightSerializable> fs = elem._2().iterator();
                             Long cancelled = 0L, delTime, count = 0L, countDel = 0L;
-                            Long maxDelTime = Long.MIN_VALUE;
+                                    Long maxDelTime = Long.MIN_VALUE;
                             while (fs.hasNext()) {
                                 FlightSerializable flNext = fs.next();
                                 delTime = flNext.getDelayTime();
