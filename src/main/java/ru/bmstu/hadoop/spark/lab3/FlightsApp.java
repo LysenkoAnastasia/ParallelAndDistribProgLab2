@@ -11,23 +11,21 @@ import java.util.Map;
 
 import static org.spark_project.guava.primitives.Longs.max;
 
-
 public class FlightsApp {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
         final Broadcast<Map<Long, String>> airportsBroadcasted = sc.broadcast(
-                sc.textFile("L_AIRPORT_ID")
+                sc.textFile("L_AIRPORT_ID.csv")
                         .zipWithIndex()
                         .filter(elem -> elem._2() != 0)
                         .map(l -> AirportParser.AirportParser(l._1()))
                         .mapToPair(p -> new Tuple2<>(p.getAirportId(), p.getAiroportName()))
                         .collectAsMap()
         );
-
-
-        JavaPairRDD<Tuple2<Long, Long>, FlightSerializable> flightPair = sc.textFile("664600583_T_ONTIME_sample.csv")
+        
+        sc.textFile("664600583_T_ONTIME_sample.csv")
                 .zipWithIndex()
                 .filter(elem -> elem._2() != 0)
                 .map(l -> FlightParser.FlightParser(l._1()))
@@ -36,34 +34,34 @@ public class FlightsApp {
                                 new Tuple2<>(p.getOrigionAirportID(), p.getDestAirportID()),
                                 new FlightSerializable(p.getDelayTime(), p.getCancelled())
                         )
-                );
+                )
+                .groupByKey()
+                .map(
+                        elem -> {
+                            Iterator<FlightSerializable> fs = elem._2().iterator();
+                            Long cancelled = 0L, delTime, count = 0L, countDel = 0L;
+                            Long maxDelTime = Long.MIN_VALUE;
+                            while (fs.hasNext()) {
+                                FlightSerializable flNext = fs.next();
+                                delTime = flNext.getDelayTime();
+                                if (delTime > 0) {
+                                    countDel++;
+                                }
+                                maxDelTime = max(maxDelTime, delTime);
+                                cancelled += flNext.getCancelled();
+                                count++;
 
-        JavaPairRDD<Tuple2<Long, Long>, Iterable<FlightSerializable>> flightGroupPair = flightPair.groupByKey();
-
-        flightGroupPair.map(
-                elem -> {
-                    Iterator<FlightSerializable> fs = elem._2().iterator();
-                    Long cancelled = 0L, delTime, count = 0L, countDel = 0L;
-                    Long maxDelTime = Long.MIN_VALUE;
-                    while (fs.hasNext()) {
-                        FlightSerializable flNext = fs.next();
-                        delTime  = flNext.getDelayTime();
-                        if (delTime > 0) {
-                            countDel++;
+                            }
+                            return new Tuple2<>(
+                                    new Tuple2<>(
+                                            airportsBroadcasted.getValue().get(elem._1()._1()),
+                                            airportsBroadcasted.getValue().get(elem._1()._2())
+                                    ),
+                                    maxDelTime + " " + countDel * 100 / count + " " + cancelled * 100 / count
+                            );
                         }
-                        maxDelTime = max(maxDelTime, delTime);
-                        cancelled += flNext.getCancelled();
-                        count ++;
-
-                    }
-                    return new Tuple2<>(
-                            new Tuple2<>(
-                                    airportsBroadcasted.getValue().get(elem._1()._1()),
-                                    airportsBroadcasted.getValue().get(elem._1()._2())
-                            ),
-                            maxDelTime + " " + countDel*100/count + " " + cancelled*100/count
-                    );
-                }
-        ).saveAsTextFile("output");
+                )
+                .saveAsTextFile("output");
     }
+
 }

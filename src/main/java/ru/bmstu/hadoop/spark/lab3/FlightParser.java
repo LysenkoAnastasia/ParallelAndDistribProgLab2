@@ -20,11 +20,16 @@ public class FlightParser {
     }
 
     public long getDelayTime() {
-        return Long.parseLong(strings[18].replace("\"", ""));
+        if (!strings[18].isEmpty()) {
+            return Long.parseLong(strings[18].replace("\"", ""));
+        }
+        return 0;
     }
 
     public long getCancelled() {
-        return Long.parseLong(strings[19].replace("\"", ""));
+        if (!strings[19].isEmpty()) {
+            return Long.parseLong(strings[19].replace("\"", ""));
+        }
+        return 0;
     }
-
 }

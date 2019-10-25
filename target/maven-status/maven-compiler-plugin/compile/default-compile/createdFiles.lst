@@ -1,3 +1,4 @@
-FlightParser.class
-FlightSerializable.class
-FlightsApp.class
+ru/bmstu/hadoop/spark/lab3/AirportParser.class
+ru/bmstu/hadoop/spark/lab3/FlightParser.class
+ru/bmstu/hadoop/spark/lab3/FlightsApp.class
+ru/bmstu/hadoop/spark/lab3/FlightSerializable.class

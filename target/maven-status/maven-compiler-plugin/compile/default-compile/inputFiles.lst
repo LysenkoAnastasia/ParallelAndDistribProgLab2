@@ -1,3 +1,4 @@
-/home/anastasia/ParallelAndDistribProgLab3/src/main/java/FlightParser.java
-/home/anastasia/ParallelAndDistribProgLab3/src/main/java/FlightsApp.java
-/home/anastasia/ParallelAndDistribProgLab3/src/main/java/FlightSerializable.java
+/home/anastasia/ParallelAndDistribProgLab3/src/main/java/ru/bmstu/hadoop/spark/lab3/FlightParser.java
+/home/anastasia/ParallelAndDistribProgLab3/src/main/java/ru/bmstu/hadoop/spark/lab3/FlightSerializable.java
+/home/anastasia/ParallelAndDistribProgLab3/src/main/java/ru/bmstu/hadoop/spark/lab3/AirportParser.java
+/home/anastasia/ParallelAndDistribProgLab3/src/main/java/ru/bmstu/hadoop/spark/lab3/FlightsApp.java

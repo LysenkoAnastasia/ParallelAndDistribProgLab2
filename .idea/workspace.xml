@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48411932-6719-44fe-8a2a-63262d033510" name="Default Changelist" comment="" />
+    <list default="true" id="48411932-6719-44fe-8a2a-63262d033510" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/AirportParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/AirportParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/FlightParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/FlightParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/FlightsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/FlightsApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,13 +43,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/lab3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DevelopmentOfParallelAndDistributedPrograms/lab2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SvnConfiguration">
@@ -67,6 +77,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="125" y="149" width="847" height="677" key="#Project_Structure" timestamp="1572023966219">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="125" y="149" width="847" height="677" key="#Project_Structure/67.27.1853.923@67.27.1853.923" timestamp="1572023966219" />
     <state x="834" y="379" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1571902541616">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
@@ -79,25 +93,25 @@
       <screen x="67" y="27" width="1853" height="923" />
     </state>
     <state x="746" y="348" width="494" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1853.923@67.27.1853.923" timestamp="1571908403278" />
-    <state x="776" y="245" width="424" height="484" key="FileChooserDialogImpl" timestamp="1572021541952">
+    <state x="776" y="245" width="424" height="484" key="FileChooserDialogImpl" timestamp="1572030443923">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
-    <state x="776" y="245" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.923@67.27.1853.923" timestamp="1572021541952" />
+    <state x="776" y="245" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.923@67.27.1853.923" timestamp="1572030443923" />
     <state x="482" y="122" key="SettingsEditor" timestamp="1571598719261">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
     <state x="482" y="122" key="SettingsEditor/67.27.1853.923@67.27.1853.923" timestamp="1571598719261" />
-    <state x="649" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1572021013149">
+    <state x="649" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1572030392607">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
-    <state x="649" y="315" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1572021013148" />
+    <state x="649" y="315" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1572030392607" />
     <state x="167" y="125" width="1653" height="725" key="dock-window-1" timestamp="1572021120720">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
     <state x="167" y="125" width="1653" height="725" key="dock-window-1/67.27.1853.923@67.27.1853.923" timestamp="1572021120720" />
-    <state x="302" y="89" width="1372" height="796" key="new project wizard" timestamp="1571898702058">
+    <state x="302" y="89" width="1372" height="796" key="new project wizard" timestamp="1572028425425">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
-    <state x="302" y="89" width="1372" height="796" key="new project wizard/67.27.1853.923@67.27.1853.923" timestamp="1571898702058" />
+    <state x="302" y="89" width="1372" height="796" key="new project wizard/67.27.1853.923@67.27.1853.923" timestamp="1572028425425" />
   </component>
 </project>

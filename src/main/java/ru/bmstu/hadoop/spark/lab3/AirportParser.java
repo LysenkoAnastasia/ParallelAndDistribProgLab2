@@ -12,7 +12,8 @@ public class AirportParser {
     }
 
     public long getAirportId() {
-        return Long.getLong(strings[0].replace("\"", ""));
+        String str = strings[0].replace("\"", "");
+        return Long.parseLong(str);
     }
 
     public String getAiroportName() {
