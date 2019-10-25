@@ -20,7 +20,7 @@ public class FlightParser {
     }
 
     public long getDelayTime() {
-        if (!strings[18].isEmpty()) {
+        if (!strings[18].replace("\"", "").isEmpty()) {
             return Long.parseLong(strings[18].replace("\"", ""));
         }
         return 0;
