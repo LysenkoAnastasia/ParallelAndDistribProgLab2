@@ -1,18 +1,18 @@
 package ru.bmstu.hadoop.spark.lab3;
 
-public class CsvParser {
+public class FlightParser {
     final String[] strings;
 
-    private CsvParser(String line, String delimiter) {
+    private FlightParser(String line, String delimiter) {
         this.strings = line.split(delimiter);
     }
 
-    static CsvParser getFlightParser(String line) {
-        return new CsvParser(line, ",");
+    static FlightParser getFlightParser(String line) {
+        return new FlightParser(line, ",");
     }
 
-    static CsvParser getAirportParser(String line) {
-        return new CsvParser(line, ",[\"]");
+    static FlightParser getAirportParser(String line) {
+        return new FlightParser(line, ",[\"]");
     }
 
     public long getAirportId() {

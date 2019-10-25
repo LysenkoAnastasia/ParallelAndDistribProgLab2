@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48411932-6719-44fe-8a2a-63262d033510" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/FlightsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/FlightsApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="48411932-6719-44fe-8a2a-63262d033510" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/lab3" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/lab3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -89,10 +87,14 @@
       <screen x="67" y="27" width="1853" height="923" />
     </state>
     <state x="482" y="122" key="SettingsEditor/67.27.1853.923@67.27.1853.923" timestamp="1571598719261" />
-    <state x="649" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1572004388282">
+    <state x="649" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1572021013149">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
-    <state x="649" y="315" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1572004388282" />
+    <state x="649" y="315" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1572021013148" />
+    <state x="167" y="125" width="1653" height="725" key="dock-window-1" timestamp="1572021120720">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="167" y="125" width="1653" height="725" key="dock-window-1/67.27.1853.923@67.27.1853.923" timestamp="1572021120720" />
     <state x="302" y="89" width="1372" height="796" key="new project wizard" timestamp="1571898702058">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
