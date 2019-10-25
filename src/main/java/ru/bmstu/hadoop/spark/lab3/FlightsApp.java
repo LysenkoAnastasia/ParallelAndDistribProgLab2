@@ -16,17 +16,22 @@ public class FlightsApp {
 
         final Broadcast<Map<Long, String>> airportsBroadcasted = sc.broadcast(
                 sc.textFile("L_AIRPORT_ID")
-                        .map(l -> CsvParser.getAirportParser(l))
+                        .zipWithIndex()
+                        .filter(elem -> elem._2() != 0)
+                        .map(l -> CsvParser.getAirportParser(l._1()))
                         .mapToPair(p -> new Tuple2<>(p.getAirportId(), p.getAiroportName()))
                         .collectAsMap()
         );
 
 
         JavaPairRDD<Tuple2<Long, Long>, FlightSerializable> flightPair = sc.textFile("664600583_T_ONTIME_sample.csv")
-                .mapToPair(s ->
+                .zipWithIndex()
+                .filter(elem -> elem._2() != 0)
+                .map(l -> CsvParser.getFlightParser(l._1()))
+                .mapToPair(p ->
                         new Tuple2<>(
-                                new Tuple2<>(flP.getOrigionAirportID(s), flP.getDestAirportID(s)),
-                                new FlightSerializable(flP.getDelayTime(s), flP.getCancelled(s))
+                                new Tuple2<>(p.getOrigionAirportID(), p.getDestAirportID()),
+                                new FlightSerializable(p.getDelayTime(), p.getCancelled())
                         )
                 );
 
