@@ -26,15 +26,15 @@ public class FlightsApp {
 
         JavaPairRDD<Tuple2<Integer, Integer>, FlightSerializable> flightPair = flightsFile
                 .mapToPair(s -> new Tuple2<>(new Tuple2(flP.getOrigionAirportID(s), flP.getDestAirportID(s)),
-                new FlightSerializable(flP.getOrigionAirportID(s), flP.getDestAirportID(s), flP.getDelayTime(s), flP.getCancelled(s)))
-        );
+                        new FlightSerializable(flP.getOrigionAirportID(s), flP.getDestAirportID(s), flP.getDelayTime(s), flP.getCancelled(s)))
+                );
 
         JavaPairRDD<Tuple2<Integer, Integer>, Iterable<FlightSerializable>> flightGroupPair = flightPair.groupByKey();
 
         JavaPairRDD<Tuple2<Integer, Integer>, String> res = flightGroupPair.reduce(new Tuple2<>(new Tuple2<>()),
-                {public String call(Long delT, Long cancelled) {return ; }
+                { public String call (Long delT, Long cancelled){
+            return ;}
                 }
         )
     }
-
 }
