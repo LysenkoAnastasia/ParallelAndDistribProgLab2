@@ -21,7 +21,7 @@ public class FlightsApp {
                 sc.textFile("L_AIRPORT_ID")
                         .zipWithIndex()
                         .filter(elem -> elem._2() != 0)
-                        .map(l -> FlightParser.getAirportParser(l._1()))
+                        .map(l -> AirportParser.AirportParser(l._1()))
                         .mapToPair(p -> new Tuple2<>(p.getAirportId(), p.getAiroportName()))
                         .collectAsMap()
         );
@@ -30,7 +30,7 @@ public class FlightsApp {
         JavaPairRDD<Tuple2<Long, Long>, FlightSerializable> flightPair = sc.textFile("664600583_T_ONTIME_sample.csv")
                 .zipWithIndex()
                 .filter(elem -> elem._2() != 0)
-                .map(l -> FlightParser.getFlightParser(l._1()))
+                .map(l -> FlightParser.FlightParser(l._1()))
                 .mapToPair(p ->
                         new Tuple2<>(
                                 new Tuple2<>(p.getOrigionAirportID(), p.getDestAirportID()),

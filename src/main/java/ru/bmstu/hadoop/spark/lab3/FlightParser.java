@@ -7,20 +7,8 @@ public class FlightParser {
         this.strings = line.split(delimiter);
     }
 
-    static FlightParser getFlightParser(String line) {
+    static FlightParser FlightParser(String line) {
         return new FlightParser(line, ",");
-    }
-
-    static FlightParser getAirportParser(String line) {
-        return new FlightParser(line, ",[\"]");
-    }
-
-    public long getAirportId() {
-        return Long.getLong(strings[0]);
-    }
-
-    public String getAiroportName() {
-        return strings[1];
     }
 
     public long getOrigionAirportID() {
