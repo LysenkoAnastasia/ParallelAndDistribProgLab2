@@ -1,6 +1,15 @@
 package ru.bmstu.hadoop.spark.lab3;
 
 public class FlightParser {
+    final String[] strings;
+
+    FlightParser(String line, String delimiter) {
+        this.strings = line.split(delimiter);
+    }
+
+    FlightParser getFlightParser(String line) {
+        
+    }
 
     public long getAirportId(String str) {
         String[] strings = str.split(",[\"]");
