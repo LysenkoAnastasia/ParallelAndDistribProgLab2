@@ -2,10 +2,8 @@ package ru.bmstu.hadoop.spark.lab3;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
-import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.broadcast.Broadcast;
-import ru.bmstu.hadoop.spark.lab3.FlightParser;
 import scala.Tuple2;
 
 import java.util.Map;
@@ -13,13 +11,12 @@ import java.util.Map;
 
 public class FlightsApp {
     public static void main(String[] args) {
-        final FlightParser flP = new FlightParser();
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
         final Broadcast<Map<Long, String>> airportsBroadcasted = sc.broadcast(
                 sc.textFile("L_AIRPORT_ID")
-                        .map(l -> FlightParser.getAirportParser(l))
+                        .map(l -> CsvParser.getAirportParser(l))
                         .mapToPair(p -> new Tuple2<>(p.getAirportId(), p.getAiroportName()))
                         .collectAsMap()
         );
