@@ -3,41 +3,39 @@ package ru.bmstu.hadoop.spark.lab3;
 public class FlightParser {
     final String[] strings;
 
-    FlightParser(String line, String delimiter) {
+    private FlightParser(String line, String delimiter) {
         this.strings = line.split(delimiter);
     }
 
     FlightParser getFlightParser(String line) {
-        
+        return new FlightParser(line, ",");
     }
 
-    public long getAirportId(String str) {
-        String[] strings = str.split(",[\"]");
+    FlightParser getAirportParser(String line) {
+        return new FlightParser(line, ",[\"]");
+    }
+
+    public long getAirportId() {
         return Long.getLong(strings[0]);
     }
 
-    public String getAiroportName(String str) {
-        String[] strings = str.split(",[\"]");
+    public String getAiroportName() {
         return strings[1];
     }
 
-    public long getOrigionAirportID(String str) {
-        String[] strings = str.split(",");
+    public long getOrigionAirportID() {
         return Long.getLong(strings[11]);
     }
 
-    public long getDestAirportID(String str) {
-        String[] strings = str.split(",");
+    public long getDestAirportID() {
         return Long.getLong(strings[14]);
     }
 
-    public long getDelayTime(String str) {
-        String[] strings = str.split(",");
+    public long getDelayTime() {
         return Long.parseLong(strings[18]);
     }
 
-    public long getCancelled(String str) {
-        String[] strings = str.split(",");
+    public long getCancelled() {
         return Long.parseLong(strings[19]);
     }
 
