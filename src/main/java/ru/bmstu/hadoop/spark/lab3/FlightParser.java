@@ -12,11 +12,11 @@ public class FlightParser {
     }
 
     public long getOrigionAirportID() {
-        return Long.getLong(strings[11].replace("\"", ""));
+        return Long.parseLong(strings[11].replace("\"", ""));
     }
 
     public long getDestAirportID() {
-        return Long.getLong(strings[14].replace("\"", ""));
+        return Long.parseLong(strings[14].replace("\"", ""));
     }
 
     public long getDelayTime() {

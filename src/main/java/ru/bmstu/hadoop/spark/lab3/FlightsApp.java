@@ -1,7 +1,6 @@
 package ru.bmstu.hadoop.spark.lab3;
 
 import org.apache.spark.SparkConf;
-import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.broadcast.Broadcast;
 import scala.Tuple2;
@@ -52,13 +51,15 @@ public class FlightsApp {
                                 count++;
 
                             }
-                            return new Tuple2<>(
+                           /* return new Tuple2<>(
                                     new Tuple2<>(
                                             airportsBroadcasted.getValue().get(elem._1()._1()),
                                             airportsBroadcasted.getValue().get(elem._1()._2())
                                     ),
                                     maxDelTime + " " + countDel * 100 / count + " " + cancelled * 100 / count
-                            );
+                            );*/
+                            return airportsBroadcasted.getValue().get(elem._1()._1()) + " " + airportsBroadcasted.getValue().get(elem._1()._2())+ " "
+                                    + maxDelTime + " " + countDel * 100 / count + " " + cancelled * 100 / count;
                         }
                 )
                 .saveAsTextFile("output");
