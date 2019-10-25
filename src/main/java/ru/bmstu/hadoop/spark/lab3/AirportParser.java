@@ -12,11 +12,11 @@ public class AirportParser {
     }
 
     public long getAirportId() {
-        return Long.getLong(strings[0]);
+        return Long.getLong(strings[0].replace("\"", ""));
     }
 
     public String getAiroportName() {
-        return strings[1];
+        return strings[1].replace("\"", "");
     }
 
 }
