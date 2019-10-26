@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48411932-6719-44fe-8a2a-63262d033510" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/AirportParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/ParserAirportLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/FlightsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/FlightsApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/ParserFlightLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/spark/lab3/ParserFlightLine.java" afterDir="false" />
-    </list>
+    <list default="true" id="48411932-6719-44fe-8a2a-63262d033510" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,10 +96,10 @@
       <screen x="67" y="27" width="1853" height="923" />
     </state>
     <state x="746" y="348" width="494" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1853.923@67.27.1853.923" timestamp="1571908403278" />
-    <state x="167" y="125" width="1653" height="725" key="DiffContextDialog" timestamp="1572113128369">
+    <state x="167" y="125" width="1653" height="725" key="DiffContextDialog" timestamp="1572118632350">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
-    <state x="167" y="125" width="1653" height="725" key="DiffContextDialog/67.27.1853.923@67.27.1853.923" timestamp="1572113128369" />
+    <state x="167" y="125" width="1653" height="725" key="DiffContextDialog/67.27.1853.923@67.27.1853.923" timestamp="1572118632350" />
     <state x="776" y="245" width="424" height="484" key="FileChooserDialogImpl" timestamp="1572115947096">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
