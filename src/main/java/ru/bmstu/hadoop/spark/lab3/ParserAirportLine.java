@@ -1,6 +1,6 @@
 package ru.bmstu.hadoop.spark.lab3;
 
-public class AirportParser {
+public class ParserAirportLine {
     final String[] strings;
     static private int AIRPORT_ID = 0;
     static private int AIRPORT_NAME = 1;
@@ -8,12 +8,12 @@ public class AirportParser {
     static private String COMMA_QUOTATION = ",[\"]";
 
 
-    private AirportParser(String line, String delimiter) {
+    private ParserAirportLine(String line, String delimiter) {
         this.strings = line.split(delimiter);
     }
 
-    static AirportParser AirportParser(String line) {
-        return new AirportParser(line, COMMA_QUOTATION);
+    static ParserAirportLine ParserAirportLine(String line) {
+        return new ParserAirportLine(line, COMMA_QUOTATION);
     }
 
     public long getAirportId() {
@@ -24,5 +24,4 @@ public class AirportParser {
     public String getAiroportName() {
         return (csvParser.removeQuotation(strings[AIRPORT_NAME]));
     }
-
 }

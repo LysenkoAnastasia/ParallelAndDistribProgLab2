@@ -1,6 +1,6 @@
 package ru.bmstu.hadoop.spark.lab3;
 
-public class FlightParser {
+public class ParserFlightLine {
     final String[] strings;
     private static int ORIGION_AIR_ID = 11;
     private static int DEST_AIR_ID = 14;
@@ -10,12 +10,12 @@ public class FlightParser {
     private CSVParser csvParser = new CSVParser();
 
 
-    private FlightParser(String line, String delimiter) {
+    private ParserFlightLine(String line, String delimiter) {
         this.strings = line.split(delimiter);
     }
 
-    static FlightParser FlightParser(String line) {
-        return new FlightParser(line, COMMA);
+    static ParserFlightLine FlightParser(String line) {
+        return new ParserFlightLine(line, COMMA);
     }
 
     public long getOrigionAirportID() {
