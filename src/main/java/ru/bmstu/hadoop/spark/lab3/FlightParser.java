@@ -3,6 +3,7 @@ package ru.bmstu.hadoop.spark.lab3;
 public class FlightParser {
     final String[] strings;
 
+
     private FlightParser(String line, String delimiter) {
         this.strings = line.split(delimiter);
     }
@@ -20,15 +21,15 @@ public class FlightParser {
     }
 
     public long getDelayTime() {
-        if (!strings[18].replace("\"", "").isEmpty()) {
-            return Long.parseLong(strings[18].replace("\"", ""));
+        if (!strings[18].equals("")) {
+            return (long)Double.parseDouble(strings[18].replace("\"", ""));
         }
         return 0;
     }
 
     public long getCancelled() {
         if (!strings[19].isEmpty()) {
-            return Long.parseLong(strings[19].replace("\"", ""));
+            return  (long)Double.parseDouble(strings[19].replace("\"", ""));
         }
         return 0;
     }

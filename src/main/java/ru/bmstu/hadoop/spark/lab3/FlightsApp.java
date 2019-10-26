@@ -51,15 +51,15 @@ public class FlightsApp {
                                 count++;
 
                             }
-                           /* return new Tuple2<>(
+                            return new Tuple2<>(
                                     new Tuple2<>(
                                             airportsBroadcasted.getValue().get(elem._1()._1()),
                                             airportsBroadcasted.getValue().get(elem._1()._2())
                                     ),
-                                    maxDelTime + " " + countDel * 100 / count + " " + cancelled * 100 / count
-                            );*/
-                            return airportsBroadcasted.getValue().get(elem._1()._1()) + " " + airportsBroadcasted.getValue().get(elem._1()._2())+ " "
-                                    + maxDelTime + " " + countDel * 100 / count + " " + cancelled * 100 / count;
+                                    maxDelTime + " " + countDel * 100 / count + "% " + cancelled * 100 / count + "%"
+                            );
+                            /*return airportsBroadcasted.getValue().get(elem._1()._1()) + " " + airportsBroadcasted.getValue().get(elem._1()._2())+ " "
+                                    + maxDelTime + " " + countDel * 100 / count + " " + cancelled * 100 / count;*/
                         }
                 )
                 .saveAsTextFile("output");
